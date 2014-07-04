@@ -148,6 +148,7 @@ define PyPackage/python-mini-eff/filespec
 +|/usr/lib/python$(PYTHON_VERSION)/encodings/ascii.py
 +|/usr/lib/python$(PYTHON_VERSION)/encodings/base64_codec.py
 +|/usr/lib/python$(PYTHON_VERSION)/encodings/hex_codec.py
++|/usr/lib/python$(PYTHON_VERSION)/encodings/string_escape.py
 +|/usr/lib/python$(PYTHON_VERSION)/encodings/utf_8.py
 +|/usr/lib/python$(PYTHON_VERSION)/fnmatch.py
 +|/usr/lib/python$(PYTHON_VERSION)/functools.py
@@ -200,6 +201,7 @@ define PyPackage/python-mini-eff/filespec
 +|/usr/lib/python$(PYTHON_VERSION)/opcode.py
 +|/usr/lib/python$(PYTHON_VERSION)/optparse.py
 +|/usr/lib/python$(PYTHON_VERSION)/os.py
++|/usr/lib/python$(PYTHON_VERSION)/pbkdf2.py
 +|/usr/lib/python$(PYTHON_VERSION)/pickle.py
 +|/usr/lib/python$(PYTHON_VERSION)/pkgutil.py
 +|/usr/lib/python$(PYTHON_VERSION)/popen2.py
