@@ -10,7 +10,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=python-mini-eff
 PKG_VERSION:=2.7.3
-PKG_RELEASE:=4
+PKG_RELEASE:=8
 
 PKG_SOURCE:=Python-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL:=http://www.python.org/ftp/python/$(PKG_VERSION)
@@ -130,6 +130,7 @@ define PyPackage/python-mini-eff/filespec
 +|/usr/lib/python$(PYTHON_VERSION)/__future__.py
 +|/usr/lib/python$(PYTHON_VERSION)/_abcoll.py
 +|/usr/lib/python$(PYTHON_VERSION)/abc.py
++|/usr/lib/python$(PYTHON_VERSION)/atexit.py
 +|/usr/lib/python$(PYTHON_VERSION)/bisect.py
 +|/usr/lib/python$(PYTHON_VERSION)/base64.py
 +|/usr/lib/python$(PYTHON_VERSION)/collections.py
@@ -138,12 +139,16 @@ define PyPackage/python-mini-eff/filespec
 +|/usr/lib/python$(PYTHON_VERSION)/chunk.py
 +|/usr/lib/python$(PYTHON_VERSION)/compileall.py
 +|/usr/lib/python$(PYTHON_VERSION)/ConfigParser.py
++|/usr/lib/python$(PYTHON_VERSION)/codecs.py
 +|/usr/lib/python$(PYTHON_VERSION)/copy.py
 +|/usr/lib/python$(PYTHON_VERSION)/copy_reg.py
 +|/usr/lib/python$(PYTHON_VERSION)/dis.py
 +|/usr/lib/python$(PYTHON_VERSION)/encodings/__init__.py
 +|/usr/lib/python$(PYTHON_VERSION)/encodings/aliases.py
++|/usr/lib/python$(PYTHON_VERSION)/encodings/ascii.py
++|/usr/lib/python$(PYTHON_VERSION)/encodings/base64_codec.py
 +|/usr/lib/python$(PYTHON_VERSION)/encodings/hex_codec.py
++|/usr/lib/python$(PYTHON_VERSION)/encodings/utf_8.py
 +|/usr/lib/python$(PYTHON_VERSION)/fnmatch.py
 +|/usr/lib/python$(PYTHON_VERSION)/functools.py
 +|/usr/lib/python$(PYTHON_VERSION)/genericpath.py
@@ -152,6 +157,7 @@ define PyPackage/python-mini-eff/filespec
 +|/usr/lib/python$(PYTHON_VERSION)/hashlib.py
 +|/usr/lib/python$(PYTHON_VERSION)/heapq.py
 +|/usr/lib/python$(PYTHON_VERSION)/htmlentitydefs.py
++|/usr/lib/python$(PYTHON_VERSION)/hmac.py
 +|/usr/lib/python$(PYTHON_VERSION)/inspect.py
 +|/usr/lib/python$(PYTHON_VERSION)/io.py
 +|/usr/lib/python$(PYTHON_VERSION)/json/__init__.py
@@ -173,10 +179,14 @@ define PyPackage/python-mini-eff/filespec
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/itertools.so
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/_io.so
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/math.so
++|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/_md5.so
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/operator.so
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/_random.so
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/select.so
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/_socket.so
++|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/_sha.so
++|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/_sha256.so
++|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/_sha512.so
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/strop.so
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/_struct.so
 +|/usr/lib/python$(PYTHON_VERSION)/lib-dynload/syslog.so
@@ -198,6 +208,7 @@ define PyPackage/python-mini-eff/filespec
 +|/usr/lib/python$(PYTHON_VERSION)/random.py
 +|/usr/lib/python$(PYTHON_VERSION)/repr.py
 +|/usr/lib/python$(PYTHON_VERSION)/re.py
++|/usr/lib/python$(PYTHON_VERSION)/rfc822.py
 +|/usr/lib/python$(PYTHON_VERSION)/site.py
 +|/usr/lib/python$(PYTHON_VERSION)/socket.py
 +|/usr/lib/python$(PYTHON_VERSION)/sre_compile.py
